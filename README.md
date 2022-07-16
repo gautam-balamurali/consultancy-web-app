@@ -1,5 +1,7 @@
 # ConsultancyWebApp
 
+A professional consulting web app which can be used as an essential marketing tool to act as the door to a business' online presence.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
 
 ## Development server
