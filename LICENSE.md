@@ -1,4 +1,5 @@
-Copyright © 2022 Gautam Balamurali <gtmbalamurali@gmail.com>
+Copyright © 2022 Gautam Balamurali <gtmbalamurali@gmail.com>.
+All Rights Reserved.
 
 This file is part of the consultancy-web-app(ConsultancyWebApp) project.
 
