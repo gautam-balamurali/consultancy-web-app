@@ -1,9 +1,15 @@
 .header {
+  position: fixed;
   display: flex;
   justify-content: space-between;
+  z-index: 999;
 }
 
 span {
   padding-right: 1rem;
   cursor: pointer;
+}
+
+.header-hidden {
+  visibility: hidden;
 }
