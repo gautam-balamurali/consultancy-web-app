@@ -20,32 +20,237 @@ $my-app-theme: mat.define-light-theme(
 
 @include mat.all-component-themes($my-app-theme);
 
-html,
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 body {
-  height: 100%;
-}
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 8px 0;
+  font-family: "Montserrat", sans-serif;
+  color: var(--primary);
+  background-color: var(--secondary);
+  margin: 0px auto;
+  max-width: 85%;
+  width: 100%;
 }
 
-p {
-  margin: 0;
+:root {
+  --primary: #b91c1c;
+  --secondary: #fef2f2;
+  --tertiary: #fee2e2;
+  --primary-major: rgb(47, 46, 65);
 }
 
-li {
+hr {
+  margin: 2rem 0;
+}
+
+.text-sm {
+  font-size: 0.8rem;
+}
+
+/** containers **/
+
+.container {
+  padding: 0rem 0rem;
+}
+
+.container-fluid {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.container-footer {
+  margin: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 600px;
+}
+
+.container-center {
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+}
+
+/** links **/
+
+.primary-link {
+  text-decoration: none;
+  color: var(--secondary);
+  background-color: var(--primary);
+  width: max-content;
+  min-width: 140px;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.secondary-link {
+  text-decoration: none;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  width: max-content;
+  min-width: 140px;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background-color: var(--secondary);
+}
+
+/** nav **/
+
+.navigation {
+  background-color: var(--primary);
+  padding: 1rem 0rem;
+  color: var(--secondary);
+  border-bottom-left-radius: 1rem;
+}
+
+.navigation .brand {
+  font-weight: bold;
   font-size: large;
 }
 
-.spacer {
-  flex: 1;
+.navigation ul {
+  list-style: none;
+  text-align: right;
+}
+
+.navigation li {
+  display: inline-block;
+  padding: 0rem 0.8rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+.navigation .active {
+  font-weight: bold;
+}
+
+/** header **/
+
+.user-avatar {
+  padding: 2rem;
+  padding-top: 5rem;
+  color: var(--tertiary);
+  display: block;
+}
+
+.user-avatar img {
+  max-width: 80%;
+  width: 550px;
+  display: block;
+  margin: auto;
+}
+
+.user-avatar .user-avatar-heading {
+  text-align: center;
+  padding-top: 1rem;
+  color: var(--primary);
+}
+
+.user-avatar .user-avatar-heading .heading-inverted {
+  color: var(--primary-major);
+  display: block;
+}
+
+/** section **/
+
+.section {
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.section h2 {
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.section p {
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.tertiary {
+  background-color: var(--tertiary);
+}
+
+/** lists **/
+
+.unordered {
+  list-style: none;
+}
+
+.list-inline li {
+  display: inline;
+  padding: 0rem 0.5rem;
+}
+
+/** footer **/
+
+.footer {
+  background-color: var(--primary);
+  color: var(--secondary);
+  padding: 2rem 0rem;
+  border-top-right-radius: 1rem;
+  text-align: center;
+}
+
+.footer .heading {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.footer ul {
+  padding-inline-start: 0px;
+}
+
+.footer .link {
+  color: var(--secondary);
+}
+
+.tech-stack {
+  color: var(--primary-major);
+  font-weight: bold;
+}
+
+/** media queries **/
+
+@media (max-width: 900px) {
+  body {
+    max-width: 95%;
+    width: 100%;
+  }
+
+  .list-inline li {
+    display: inline;
+    padding: 0.5rem;
+  }
+
+  .navigation li {
+    display: inline-block;
+    padding: 0.3rem;
+  }
+
+  .container-center {
+    width: auto;
+  }
+
+  .section a {
+    display: inline;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 911px) and (max-width: 915px) {
+  body {
+    font-size: x-large;
+  }
+}
+
+@media (max-width: 321px) {
+  body {
+    font-size: x-small;
+  }
 }
