@@ -1,5 +1,5 @@
 <!-- Header -->
-<mat-toolbar color="primary" class="header">
+<!-- <mat-toolbar color="primary" class="header">
   <div>Random Consultancy Services</div>
   <div>
     <span [routerLink]="'/home'" routerLinkActive="active">Home</span>
@@ -14,5 +14,23 @@
     <span></span>
     <span></span>
   </div>
-</mat-toolbar>
+</mat-toolbar> -->
+<nav class="navigation">
+  <div class="container-fluid">
+    <div class="brand">
+      <a [routerLink]="'/'">Random Consultancy Services</a>
+    </div>
+    <ul>
+      <li>
+        <a [routerLink]="'/home'" routerLinkActive="active">Home</a>
+      </li>
+      <li>
+        <a [routerLink]="'/services'" routerLinkActive="active">Services</a>
+      </li>
+      <li>
+        <a [routerLink]="'/about'" routerLinkActive="active">About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 <!-- Header -->
